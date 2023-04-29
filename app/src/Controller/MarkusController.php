@@ -25,4 +25,11 @@ class MarkusController extends AbstractController
     {
         return $this->render('me.html.twig');
     }
+
+    #[Route("/lucky", name: "lucky")]
+    public function lucky(): Response
+    {
+        // INKLUDERA DATA OCH NÅGOT SOM HÄNDER
+        return $this->render('lucky.html.twig');
+    }
 }
