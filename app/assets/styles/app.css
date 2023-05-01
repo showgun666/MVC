@@ -1,3 +1,52 @@
+
 body {
     background-color: lightgray;
+    margin: 0 auto;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header {
+    height: 3em;
+    background-size: cover;
+    grid-area: header;
+    font-size: 3em;
+    color: blue;
+    text-align: right;
+}
+
+.image-small {
+    max-width: 4em;
+}
+
+.image-medium {
+    max-width: 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        '. header header header header header .'
+        '. navbar main main main side .'
+        '. . footer footer footer footer .';
+    height: 100vh;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.side {
+    grid-area: side;
 }
