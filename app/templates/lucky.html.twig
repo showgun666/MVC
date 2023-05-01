@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Lucky{% endblock %}
-
+{% block title %}Lucky Quote{% endblock %}
 {% block body %}
+    <h1>Your lucky quote:</h1>
+    <img style="max-width: 50%;" src="{{ asset('img/pratbubbla.png') }}" alt="En bild av en pratbubbla.">
+    <p>{{ quote }}</p>
 {% endblock %}

@@ -4,15 +4,18 @@
 
 {% block body %}
     <h1>About</h1>
+    <a href="{{ asset('img/mvc.jpg')}}">
+        <img class="image-medium" src="{{ asset('img/mvc.jpg')}}" alt="En representativ bild för kursen.">
+    </a>
     <a href="https://github.com/dbwebb-se/mvc/">
-        Kursens Githubrepo
-        <img src="{{ asset('img/github.png')}}" alt="En representativ bild.">
+        <img class="image-small" src="{{ asset('img/github.png')}}" alt="Github Logo.">
+        Kursens Githubrepo(Som även går att klicka på)
     </a>
     <a href="https://github.com/showgun666/MVC">
-        Min egna Githubrepo
-        <img src="{{ asset('img/github.png')}}" alt="En representativ bild.">
+        <img class="image-small" src="{{ asset('img/github.png')}}" alt="Github Logo.">
+        Min egna Githubrepo(Som också den går att klicka på)
     </a>
-    <p>Kursen MVC (Model-View-Controller) handlar om programmering i webbmiljö med fokus på att skapa dynamiska webbapplikationer.</p>
+    <p>Kursen MVC handlar om programmering i webbmiljö med fokus på att skapa dynamiska webbapplikationer.</p>
     <p>Kursen innefattar syntax och semantik för att koppla applikationen mot databaser och att använda datastrukturer och inbyggda funktioner.</p>
     <p>Objektorienterad programmering i PHP används för att strukturera och återanvända kod och enkla designmönster tillämpas.</p>
     <p>Kursen inkluderar också användning av SQL med en databas tillsammans med PHP Data Objects.</p>
