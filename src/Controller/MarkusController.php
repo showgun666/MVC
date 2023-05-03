@@ -20,10 +20,10 @@ class MarkusController extends AbstractController
         return $this->render('report.html.twig');
     }
 
-    #[Route("/me", name: "me")]
+    #[Route("/", name: "home")]
     public function me(): Response
     {
-        return $this->render('me.html.twig');
+        return $this->render('home.html.twig');
     }
 
     #[Route("/lucky", name: "lucky")]
